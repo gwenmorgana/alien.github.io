@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ancient Alien Theories</title>
+  <style>
+    /* General Page Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+      color: #e4e4e4;
+      overflow-x: hidden;
+    }
+
+    /* Dripping Egyptian Symbol Menu Styles */
+    @keyframes drip {
+      0% { opacity: 1; transform: translateY(-100%); }
+      100% { opacity: 0; transform: translateY(100%); }
+    }
+
+    nav {
+      background-color: #00274d;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #ffcc00;
+      font-size: 1.2em;
+      margin: 0 15px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    nav a::before {
+      content: "\u262F \u2694 \u25B2 \u2623";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5em;
+      color: #ffd700;
+      animation: drip 2s infinite;
+    }
+
+    nav a:hover {
+      background: linear-gradient(45deg, #ffcc00, #996633);
+      color: #333;
+      box-shadow: 0 4px 10px rgba(255, 204, 0, 0.7);
+    }
+
+    /* Header Styling */
+    header {
+      text-align: center;
+      padding: 30px 0;
+      color: #fff;
+      font-size: 2.5em;
+      letter-spacing: 6px;
+      background: linear-gradient(45deg, #00274d, #996633);
+      text-transform: uppercase;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    header span {
+      display: inline-block;
+      background: linear-gradient(to right, #f2d600, #ff7600);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #f2d600; }
+      to { text-shadow: 0 0 20px #ff7600; }
+    }
+
+    /* Placeholder Content Styling */
+    .main-content {
+      padding: 50px;
+      margin: 20px;
+      background: rgba(34, 34, 34, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    }
+
+    .section-title {
+      font-size: 2.5em;
+      color: #f2d600;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #ff7600, #f2d600);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(255, 118, 0, 0.8);
+    }
+
+    .content-text {
+      font-size: 1.3em;
+      line-height: 1.8;
+      color: #f9f9f9;
+      text-align: justify;
+      margin: 20px 0;
+    }
+
+    /* Pyramid Background Parallax */
+    .pyramid-background {
+      position: relative;
+      height: 60vh;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Pyramid_of_Giza_%28Khufu%29.jpg') center/cover no-repeat;
+      filter: brightness(0.6);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      animation: float 10s infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-20px); }
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #111111;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: relative;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <span>Ancient Alien Theories</span>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#stories">Stories</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Pyramid Background -->
+  <div class="pyramid-background"></div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <section id="about">
+      <div class="section-title">About Placeholder</div>
+      <div class="content-text">
+        [Placeholder for content about ancient alien theories, their origins, and modern interpretations.]
+      </div>
+    </section>
+
+    <section id="stories">
+      <div class="section-title">Stories Placeholder</div>
+      <div class="content-text">
+        [Placeholder for detailed stories about encounters, ancient texts, and theories connecting extraterrestrial life with human history.]
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">Contact Placeholder</div>
+      <div class="content-text">
+        [Placeholder for contact information, submission forms, or links to resources related to ancient alien theories.]
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2024 Ancient Alien Theories. All Rights Reserved.
+  </div>
+
+</body>
+</html>
